@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/usr/lib/python3.7/site-packages/PyQt5'
+let g:netrw_dirhist_3='/usr/lib/python3.7/site-packages/PyQt5/Qt'
+let g:netrw_dirhist_2='/usr/lib/python3.7/site-packages/PyQt5'
+let g:netrw_dirhist_1='/usr/lib'

@@ -270,6 +270,7 @@ Plug 'tpope/vim-surround' " type ysks' to wrap the word with '' or type cs'` to 
 Plug 'godlygeek/tabular' " type ;Tabularize /= to align the =
 Plug 'gcmt/wildfire.vim' " in Visual mode, type i' to select all text in '', or type i) i] i} ip
 Plug 'scrooloose/nerdcommenter' " in <space>cc to comment a line
+Plug 'lambdalisue/suda.vim' "to read or write files with sudo command
 
 " Dependencies
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -397,7 +398,7 @@ let g:mkdp_refresh_slow = 0
 let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world = 0
 let g:mkdp_open_ip = ''
-let g:mkdp_browser = ''
+let g:mkdp_browser = 'firefox'
 let g:mkdp_echo_preview_url = 0
 let g:mkdp_browserfunc = ''
 let g:mkdp_preview_options = {
@@ -501,6 +502,11 @@ let g:SignatureMap = {
         \ 'ListLocalMarks'     :  "m/",
         \ 'ListLocalMarkers'   :  "m?"
         \ }
+
+" ===
+" === suda
+" ===
+let g:suda_smart_edit = 1
 
 " Open the _machine_specific.vim file if it has just been created
 if has_machine_specific_file == 0
