@@ -262,6 +262,11 @@ Plug 'kshenoy/vim-signature'
 " For general writing
 Plug 'reedes/vim-wordy'
 
+" snippets
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+
 " Other useful utilities
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
@@ -306,7 +311,7 @@ set termguicolors     " enable true colors support
 "set background=dark
 let g:space_vim_transp_bg = 1
 colorscheme space_vim_theme
-let g:airline_theme='dracula'
+let g:airline_theme='durant'
 
 let g:lightline = {
   \     'active': {
@@ -502,6 +507,15 @@ let g:SignatureMap = {
         \ 'ListLocalMarks'     :  "m/",
         \ 'ListLocalMarkers'   :  "m?"
         \ }
+
+" ===
+" === snippets
+" ===
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 " ===
 " === suda
