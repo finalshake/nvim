@@ -202,6 +202,7 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 "python
+Plug 'davidhalter/jedi-vim'
 Plug 'ncm2/ncm2-jedi'
 "general
 Plug 'ncm2/ncm2-github'
@@ -274,7 +275,7 @@ Plug 'junegunn/goyo.vim' " distraction free writing mode
 Plug 'tpope/vim-surround' " type ysks' to wrap the word with '' or type cs'` to change 'word' to `word`
 Plug 'godlygeek/tabular' " type ;Tabularize /= to align the =
 Plug 'gcmt/wildfire.vim' " in Visual mode, type i' to select all text in '', or type i) i] i} ip
-Plug 'scrooloose/nerdcommenter' " in <space>cc to comment a line
+Plug 'preservim/nerdcommenter' " in <space>cc to comment a line
 Plug 'lambdalisue/suda.vim' "to read or write files with sudo command
 
 " Dependencies
@@ -372,6 +373,17 @@ let g:NERDTreeIndicatorMapCustom = {
 "let g:ycm_autoclose_preview_window_after_insertion=1
 "let g:ycm_use_clangd = 0
 "let g:ycm_python_binary_path = g:ycm_python_interpreter_path
+
+" ===
+" === vim-jedi
+" ===
+let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>a"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "D"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
 
 " ===
 " === NCM2
